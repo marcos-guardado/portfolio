@@ -1,0 +1,16 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+
+.project-projects-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+}
+
+.project-title-container {
+  display: flex;
+  justify-content: center;
+}

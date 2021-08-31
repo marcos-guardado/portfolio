@@ -1,0 +1,85 @@
+.about-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+.about-container h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+
+  color: #363636;
+}
+
+.about-container p {
+  font-size: 20px;
+  color: #363636;
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text-container div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  justify-content: start;
+}
+
+.about-container .about-image {
+  width: 50%;
+  height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+  }
+
+  .about-container h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+
+    color: #363636;
+  }
+
+  .about-container p {
+    font-size: 10px;
+    color: #363636;
+  }
+}
+
+.typewriter-effect > .text {
+  max-width: 0;
+  animation: typing 3s steps(var(--characters)) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter-effect:after {
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+}
+
+@keyframes typing {
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
+  }
+}
+
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,41 @@
+<div class="cardContainer d-flex justify-content-center">
+  <div class="col-md-6">
+    <div class="main-card mb-3 card">
+      <div class="card-body">
+        <app-title title="{{ title }}"></app-title>
+        <div
+          class="
+            vertical-timeline
+            vertical-timeline--animate
+            vertical-timeline--one-column
+          "
+        >
+          <div
+            class="vertical-timeline-item vertical-timeline-element"
+            *ngFor="let job of jobs"
+          >
+            <div>
+              <div class="vertical-timeline-element-content bounce-in">
+                <!-- here comes the title -->
+                <h4 class="timeline-title text">{{ job.title }}</h4>
+                <!-- here comes the details -->
+                <p class="text">
+                  {{ job.description }}
+                </p>
+                <!-- Here comes the dates -->
+                <span class="vertical-timeline-element-date text">
+                  {{ job.startDate | date: "mediumDate" }}
+                  <br />
+                  to
+                  <br />
+                  <span *ngIf="job.endDate == null" class="text">Current</span>
+                  {{ job.endDate | date: "mediumDate" }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div
+  class="card"
+  onmouseover=""
+  [ngStyle]="{ borderColor: skill.color, borderWidth: 1 }"
+>
+  <div class="logoContainer">
+    <em
+      [ngStyle]="{ color: skill.color }"
+      [ngClass]="[skill.logo]"
+      class="logo"
+    ></em>
+  </div>
+  <div>
+    <h4>{{ skill.name }}</h4>
+  </div>
+
+  <div>
+    <p class="level">
+      {{ skill.level }}
+    </p>
+  </div>
+  <div class="description">
+    <p>
+      {{ skill.description }}
+    </p>
+  </div>
+</div>

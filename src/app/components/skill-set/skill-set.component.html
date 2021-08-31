@@ -1,0 +1,10 @@
+<div>
+  <div class="skills-title">
+    <app-title title="{{ title }}"></app-title>
+  </div>
+  <div class="skills-container">
+    <div *ngFor="let skillDetails of skills">
+      <app-technology [skill]="skillDetails"></app-technology>
+    </div>
+  </div>
+</div>

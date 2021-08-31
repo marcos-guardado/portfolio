@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --first-gradient: #a2a2a7 /*#345749*/;
+  --second-gradient: #add1d2 /*#bc4558*/;
+}
+
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-color: #f1f2f6;
+
+  font-family: "Titillium Web", sans-serif;
+}
